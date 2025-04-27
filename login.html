@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignIn</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Jost:wght@500&display=swap">
+    </head>
+    <body>
+        <main>
+            <div class="hero">
+                <img class="account-bg" src="/Assets/img1.jpg" alt="Image">
+                
+                <!-- Sign in Frame -->
+                <div class="account-container">
+                    <div class="signin" id="signin">
+                        <div class="title">
+                            <h1>Sign In</h1>
+                            <a href="index.html"><img class="acc-logo" src="/Assets/Logo.png" alt="Logo"></a>
+                        </div>
+                        <input type="email" id="signin-email" placeholder="Email" required>
+                        <input type="password" id="signin-password" placeholder="Password" required>
+                        <button id="signin-btn">Sign In</button>
+                        <p>Don't have an account? <a href="#" onclick="toggleForms('signup')">Sign Up</a></p>
+                        <div class="media">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sign Up Frame -->
+                <div class="account-container">
+                    <div class="signup" id="signup">
+                        <div class="title">
+                            <h1>Sign Up</h1>
+                            <a href="/index.html"><img class="acc-logo" src="/Assets/Logo.png" alt="Logo"></a>
+                        </div>
+                        <input type="text" id="signup-name" placeholder="Name" required>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                        <button id="signup-btn">Sign Up</button>
+                        <p>Already have an account? <a href="#" onclick="toggleForms('signin')">Sign In</a></p>
+                        <div class="media">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="/main.js"></script>
+
+</body>
+</html>
