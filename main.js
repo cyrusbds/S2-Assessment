@@ -19,7 +19,7 @@ document.getElementById('signup-btn').addEventListener('click', async () => {
 
     if (name && email && password) {
         try {
-            const response = await fetch('http://localhost:4000/api/user/', {
+            const response = await fetch('https://s2-assessment.onrender.com/api/user/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ document.getElementById('signin-btn').addEventListener('click', async () => {
 
     if (email && password) {
         try {
-            const response = await fetch('/api/user/login', {
+            const response = await fetch('https://s2-assessment.onrender.com/api/user/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
